@@ -1,3 +1,0 @@
-task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-2	c9/ed37ba	2507	foo (3)	FAILED	127	2020-05-05 14:12:02.972	30.8s	30.8s	-	-	-	-	-
-4	6e/59935b	2853	foo (2)	FAILED	127	2020-05-05 14:12:33.850	1.3s	943ms	-	-	-	-	-
