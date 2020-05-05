@@ -6,6 +6,9 @@ process foo {
   file 'x.txt' into result
 
   """
+  echo ${task.cpus}
+  echo ${task.memory}
+  echo ${task.time}
   dsdasdsa
   echo $x > x.txt
   """
