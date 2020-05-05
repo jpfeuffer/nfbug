@@ -18,11 +18,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Nextflow workflow report for run id [lonely_mayer]">
+  <meta name="description" content="Nextflow workflow report for run id [elegant_einstein]">
   <meta name="author" content="Paolo Di Tommaso, Phil Ewels">
   <link rel="icon" type="image/png" href="https://www.nextflow.io/img/favicon.png" />
 
-  <title>[lonely_mayer] Nextflow Workflow Report</title>
+  <title>[elegant_einstein] Nextflow Workflow Report</title>
 
   <style type="text/css">
   /*!
@@ -137,7 +137,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
         <li class="nav-item"><a class="nav-link" href="#tasks">Tasks</a></li>
       </ul>
       <span class="navbar-text">
-        [lonely_mayer]
+        [elegant_einstein]
       </span>
     </div>
   </nav>
@@ -146,22 +146,22 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
     <div class="container">
 
       <h1 class="display-3">Nextflow workflow report</h1>
-      <h2 class="text-muted mb-4"><samp>[lonely_mayer]</samp> </h2>
+      <h2 class="text-muted mb-4"><samp>[elegant_einstein]</samp> </h2>
 
       
           <div class="alert alert-danger mb-4">
               <h4>Workflow execution completed unsuccessfully!</h4>
               <p>The exit status of the task that caused the workflow execution to fail was: <code>127</code>.</p>
               <p>The full error message was:</p>
-              <pre>Error executing process > 'foo (1)'
+              <pre>Error executing process > 'foo (3)'
 
 Caused by:
-  Process `foo (1)` terminated with an error exit status (127)
+  Process `foo (3)` terminated with an error exit status (127)
 
 Command executed:
 
   dsdasdsa
-  echo 1 > x.txt
+  echo 5 > x.txt
 
 Command exit status:
   127
@@ -170,20 +170,41 @@ Command output:
   (empty)
 
 Command error:
+  Unable to find image 'ubuntu:latest' locally
+  latest: Pulling from library/ubuntu
+  d51af753c3d3: Pulling fs layer
+  fc878cd0a91c: Pulling fs layer
+  6154df8ff988: Pulling fs layer
+  fee5db0ff82f: Pulling fs layer
+  fee5db0ff82f: Waiting
+  6154df8ff988: Verifying Checksum
+  6154df8ff988: Download complete
+  fc878cd0a91c: Verifying Checksum
+  fc878cd0a91c: Download complete
+  fee5db0ff82f: Verifying Checksum
+  fee5db0ff82f: Download complete
+  d51af753c3d3: Verifying Checksum
+  d51af753c3d3: Download complete
+  d51af753c3d3: Pull complete
+  fc878cd0a91c: Pull complete
+  6154df8ff988: Pull complete
+  fee5db0ff82f: Pull complete
+  Digest: sha256:747d2dbbaaee995098c9792d99bd333c6783ce56150d1b11e333bbceed5c54d7
+  Status: Downloaded newer image for ubuntu:latest
   .command.sh: line 2: dsdasdsa: command not found
 
 Work dir:
-  /Users/pfeuffer/git/nfbug/work/32/cc6e20a21c21f0c01cc3843e868d78
+  /Users/pfeuffer/git/nfbug/work/c9/ed37baa380a8214933fd515dd1f6fd
 
-Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`</pre>
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line</pre>
           </div>
       
 
       <dl>
         <dt>Run times</dt>
         <dd>
-          <span id="workflow_start">05-Mai-2020 13:48:45</span> - <span id="workflow_complete">05-Mai-2020 13:49:51</span>
-          (<span id="completed_fromnow"></span>duration: <strong>1m 6s</strong>)
+          <span id="workflow_start">05-Mai-2020 14:12:01</span> - <span id="workflow_complete">05-Mai-2020 14:17:23</span>
+          (<span id="completed_fromnow"></span>duration: <strong>5m 22s</strong>)
         </dd>
 
         <dl>
@@ -223,7 +244,7 @@ Tip: you can replicate the issue by changing to the process work dir and enterin
         
 
         <dt class="col-sm-3">Workflow session</dt>
-        <dd class="col-sm-9"><code>441a045b-9bee-4d6e-a1ef-82fc4ebedb56</code></dd>
+        <dd class="col-sm-9"><code>0c8c2c48-d1d0-483d-bafc-af752faed1e2</code></dd>
 
         
 
@@ -232,7 +253,7 @@ Tip: you can replicate the issue by changing to the process work dir and enterin
 
         
         <dt class="col-sm-3">Workflow container</dt>
-        <dd class="col-sm-9"><samp>nfcore/proteomicslfq:dev</samp></dd>
+        <dd class="col-sm-9"><samp>ubuntu:latest</samp></dd>
 
         <dt class="col-sm-3">Container engine</dt>
         <dd class="col-sm-9"><samp>docker</samp></dd>
@@ -1051,7 +1072,7 @@ $(function() {
 
   // Nextflow report data
   window.data = { "trace":[
-{"task_id":"3","hash":"32\/cc6e20","native_id":"90660","process":"foo","module":"-","container":"nfcore\/proteomicslfq:dev","tag":"-","name":"foo (1)","status":"FAILED","exit":"127","submit":"1588679327001","start":"1588679327089","complete":"1588679328688","duration":"1687","realtime":"1599","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/Users\/pfeuffer\/git\/nfbug\/work\/32\/cc6e20a21c21f0c01cc3843e868d78","script":"\n  dsdasdsa\n  echo 1 > x.txt\n  ","scratch":"-","queue":"-","cpus":"2","memory":"6442450944","disk":"-","time":"3600000","env":"PYTHONNOUSERSITE=1\n","error_action":"FINISH","vol_ctxt":"-","inv_ctxt":"-"},{"task_id":"4","hash":"c3\/0cb8ca","native_id":"90705","process":"foo","module":"-","container":"nfcore\/proteomicslfq:dev","tag":"-","name":"foo (3)","status":"FAILED","exit":"127","submit":"1588679328708","start":"1588679328909","complete":"1588679329947","duration":"1239","realtime":"1038","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/Users\/pfeuffer\/git\/nfbug\/work\/c3\/0cb8ca5db14cb7115c83682c858ac1","script":"\n  dsdasdsa\n  echo 5 > x.txt\n  ","scratch":"-","queue":"-","cpus":"2","memory":"6442450944","disk":"-","time":"3600000","env":"PYTHONNOUSERSITE=1\n","error_action":"FINISH","vol_ctxt":"-","inv_ctxt":"-"}], "summary":[{"cpuUsage":null,"process":"foo","mem":null,"memUsage":null,"timeUsage":{"mean":0.04,"min":0.03,"q1":0.03,"q2":0.04,"q3":0.04,"max":0.04,"minLabel":"foo (3)","maxLabel":"foo (1)","q1Label":"foo (3)","q2Label":"foo (3)","q3Label":"foo (3)"},"vmem":null,"reads":null,"cpu":null,"time":{"mean":1318.5,"min":1038,"q1":1178.25,"q2":1318.5,"q3":1458.75,"max":1599,"minLabel":"foo (3)","maxLabel":"foo (1)","q1Label":"foo (3)","q2Label":"foo (3)","q3Label":"foo (3)"},"writes":null}] };
+{"task_id":"2","hash":"c9\/ed37ba","native_id":"2507","process":"foo","module":"-","container":"ubuntu:latest","tag":"-","name":"foo (3)","status":"FAILED","exit":"127","submit":"1588680722972","start":"1588680723014","complete":"1588680753810","duration":"30838","realtime":"30796","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/Users\/pfeuffer\/git\/nfbug\/work\/c9\/ed37baa380a8214933fd515dd1f6fd","script":"\n  dsdasdsa\n  echo 5 > x.txt\n  ","scratch":"-","queue":"-","cpus":"2","memory":"6442450944","disk":"-","time":"3600000","env":"PYTHONNOUSERSITE=1\n","error_action":"FINISH","vol_ctxt":"-","inv_ctxt":"-"},{"task_id":"4","hash":"6e\/59935b","native_id":"2853","process":"foo","module":"-","container":"ubuntu:latest","tag":"-","name":"foo (2)","status":"FAILED","exit":"127","submit":"1588680753850","start":"1588680754189","complete":"1588680755132","duration":"1282","realtime":"943","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/Users\/pfeuffer\/git\/nfbug\/work\/6e\/59935b76555b45c814adc2f4b8d01d","script":"\n  dsdasdsa\n  echo 3 > x.txt\n  ","scratch":"-","queue":"-","cpus":"2","memory":"6442450944","disk":"-","time":"3600000","env":"PYTHONNOUSERSITE=1\n","error_action":"FINISH","vol_ctxt":"-","inv_ctxt":"-"}], "summary":[{"cpuUsage":null,"process":"foo","mem":null,"memUsage":null,"timeUsage":{"mean":0.44,"min":0.03,"q1":0.23,"q2":0.44,"q3":0.65,"max":0.86,"minLabel":"foo (2)","maxLabel":"foo (3)","q1Label":"foo (2)","q2Label":"foo (2)","q3Label":"foo (2)"},"vmem":null,"reads":null,"cpu":null,"time":{"mean":15869.5,"min":943,"q1":8406.25,"q2":15869.5,"q3":23332.75,"max":30796,"minLabel":"foo (2)","maxLabel":"foo (3)","q1Label":"foo (2)","q2Label":"foo (2)","q3Label":"foo (2)"},"writes":null}] };
 
   </script>
 
